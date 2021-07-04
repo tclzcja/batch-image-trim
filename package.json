@@ -12,5 +12,9 @@
 	"bugs": {
 		"url": "https://github.com/tclzcja/image-crop/issues"
 	},
-	"homepage": "https://github.com/tclzcja/image-crop#readme"
+	"homepage": "https://github.com/tclzcja/image-crop#readme",
+	"type": "module",
+	"dependencies": {
+		"trim-image": "^1.0.3"
+	}
 }
