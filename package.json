@@ -1,18 +1,18 @@
 {
-	"name": "image-crop",
+	"name": "batch-image-trimmer",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/tclzcja/image-crop.git"
+		"url": "git+https://github.com/tclzcja/batch-image-trimmer.git"
 	},
 	"author": "",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/tclzcja/image-crop/issues"
+		"url": "https://github.com/tclzcja/batch-image-trimmer/issues"
 	},
-	"homepage": "https://github.com/tclzcja/image-crop#readme",
+	"homepage": "https://github.com/tclzcja/batch-image-trimmer#readme",
 	"type": "module",
 	"dependencies": {
 		"trim-image": "^1.0.3"
