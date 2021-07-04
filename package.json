@@ -1,0 +1,16 @@
+{
+	"name": "image-crop",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tclzcja/image-crop.git"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/tclzcja/image-crop/issues"
+	},
+	"homepage": "https://github.com/tclzcja/image-crop#readme"
+}
