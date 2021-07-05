@@ -13,8 +13,10 @@ const files = (await fs.promises.readdir(CURRENT_DIRECTORY)).filter((f) =>
 for (const f of files) {
 	console.log("Progressing", f);
 	let image = await jimp.read(f);
-	image.autocrop({
-		cropOnlyFrames: true,
-	});
-	image.write(f);
+	image
+		.quality(100)
+		.autocrop({
+			cropOnlyFrames: true,
+		})
+		.write(f);
 }
