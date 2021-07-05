@@ -2,7 +2,7 @@
 
 import fs from "fs";
 import path from "path";
-import trimImage from "trim-image";
+import jimp from "jimp";
 
 const CURRENT_DIRECTORY = process.cwd();
 
@@ -11,5 +11,10 @@ const files = (await fs.promises.readdir(CURRENT_DIRECTORY)).filter((f) =>
 );
 
 for (const f of files) {
-	trimImage(f, f);
+	console.log("Progressing", f);
+	let image = await jimp.read(f);
+	image.autocrop({
+		cropOnlyFrames: true,
+	});
+	image.write(f);
 }

@@ -15,7 +15,7 @@
 	"homepage": "https://github.com/tclzcja/batch-image-trimmer#readme",
 	"type": "module",
 	"dependencies": {
-		"trim-image": "^1.0.3"
+		"jimp": "^0.16.1"
 	},
 	"bin": "index.js"
 }
