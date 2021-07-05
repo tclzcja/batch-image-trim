@@ -17,6 +17,8 @@ for (const f of files) {
 
 	let image = await jimp.read(f);
 
+	image.quality(100);
+
 	let edgeTop = image.bitmap.height;
 	let edgeLeft = image.bitmap.width;
 	let edgeRight = 0;
