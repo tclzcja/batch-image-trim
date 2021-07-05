@@ -20,7 +20,7 @@ for (const f of filesToRename) {
 }
 
 const files = (await fs.promises.readdir(CURRENT_DIRECTORY)).filter((f) =>
-	[".png", ".jpeg", ".jpg", ".bmp", ".tiff"].includes(path.extname(f))
+	[".png", ".bmp", ".tiff"].includes(path.extname(f))
 );
 
 for (const f of files) {
