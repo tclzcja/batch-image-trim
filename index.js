@@ -36,7 +36,12 @@ for (const f of files) {
 		}
 	}
 
-	image.crop(edgeLeft, edgeTop, edgeRight - edgeLeft, edgeBottom - edgeTop);
+	image.crop(
+		edgeLeft,
+		edgeTop,
+		edgeRight - edgeLeft + 1,
+		edgeBottom - edgeTop + 1
+	);
 
 	image.write(f);
 }
