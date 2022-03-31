@@ -1,18 +1,13 @@
 {
-	"name": "batch-image-trimmer",
+	"name": "batch-image-trim",
 	"version": "1.0.0",
-	"description": "",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/tclzcja/batch-image-trimmer.git"
+		"url": "git+https://github.com/tclzcja/batch-image-trim.git"
 	},
 	"author": "",
 	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/tclzcja/batch-image-trimmer/issues"
-	},
-	"homepage": "https://github.com/tclzcja/batch-image-trimmer#readme",
 	"type": "module",
 	"dependencies": {
 		"jimp": "^0.16.1"
