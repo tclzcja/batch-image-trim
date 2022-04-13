@@ -8,11 +8,11 @@ const CURRENT_DIRECTORY = process.cwd();
 
 console.clear();
 
-// const filesToRename = (await fs.promises.readdir(CURRENT_DIRECTORY)).filter((f) => [".jpeg", ".jpg"].includes(path.extname(f)));
+const filesToRename = (await fs.promises.readdir(CURRENT_DIRECTORY)).filter((f) => [".jpeg", ".jpg"].includes(path.extname(f)));
 
-// for (const f of filesToRename) {
-// 	await fs.promises.rename(f, f.replace(".jpg", ".png").replace(".jpeg", ".png"));
-// }
+for (const f of filesToRename) {
+	await fs.promises.rename(f, f.replace(".jpg", ".png").replace(".jpeg", ".png"));
+}
 
 const files = (await fs.promises.readdir(CURRENT_DIRECTORY)).filter((f) => [".png", ".bmp", ".tiff", ".jpg", ".jpeg"].includes(path.extname(f)));
 
